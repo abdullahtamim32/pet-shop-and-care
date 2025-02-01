@@ -7,3 +7,42 @@
     background-size: contain;
     background-position: 200px center;
 }
+/* main section */
+/* big box part */
+.big-box-parent{
+   display: flex;
+   flex-direction: column;
+  border-radius: 20px;
+   align-items: center;
+    width: 420px;
+    height: 400px;
+    padding-right: 45px;
+    /* padding-left: -70px; */
+    padding-top: 37px;
+    padding-bottom: 15px;
+
+}
+.box-box{
+    display: flex;
+    width: 220px;
+    height: 110px;
+  box-shadow: 0px 0px 5px black;
+  margin-top: -8px;
+  /* margin-bottom: 30px; */
+  align-items: center;
+  padding-left: 30px;
+  /* justify-content: start; */
+  gap: 30px;
+
+}
+/* main section big box and rating section */
+.all-small-boxes{
+    display: grid;
+    grid-template-columns: repeat(3,2fr);
+    width: 700px;
+}
+@media  screen and (max-width: 650px) {
+    .big-box-parent{
+        margin: 20px auto;
+    }  
+}
