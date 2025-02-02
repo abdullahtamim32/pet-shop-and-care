@@ -1,11 +1,15 @@
-.banner{
-    
-    height: 100vh;
-    background-image: url(c1-assets/cat-big.png);
-    background-repeat: no-repeat;
-    /* background-size: contain; */
-    background-size: contain;
-    background-position: 200px center;
+/* header banner animation */
+.header-ban-big-text{
+    animation-name: banner-tex;
+    animation-duration: 4s;
+}
+@keyframes banner-tex{
+from{
+    color: rgba(87, 87, 22, 0.79);
+}
+to{
+    color: orange
+}
 }
 /* main section */
 /* big box part */
@@ -23,7 +27,8 @@
 
 }
 .box-box{
-    display: flex;
+   display: grid;
+   grid-template-columns: repeat(3,2fr);
     width: 220px;
     height: 110px;
   box-shadow: 0px 0px 5px black;
@@ -31,15 +36,18 @@
   /* margin-bottom: 30px; */
   align-items: center;
   padding-left: 30px;
+  flex: 1;
   /* justify-content: start; */
   gap: 30px;
+  border-radius: 10px;
 
 }
 /* main section big box and rating section */
 .all-small-boxes{
     display: grid;
     grid-template-columns: repeat(3,2fr);
-    width: 700px;
+    /* width: 700px; */
+    gap: 20px;
 }
 /* teo box img and text part */
 
@@ -71,8 +79,60 @@ height: 320px;
    margin-bottom: 200px;
 }
 
+.banner-main-section{
+    height: 900px;
+}
+.image-and-input-section-main{
+    position: relative;
+    top: 450px;
+}
+footer{
+     padding-top: 400px;
+    /* padding-bottom: 700px;  */
+    padding-bottom: 300px;
+    height: 900px;
+    box-sizing: border-box;
+}
+
 @media  screen and (max-width: 650px) {
+  
+        html{
+       width: 850px;
+       }
     .big-box-parent{
         margin: 20px auto;
+        width: 750px;
+
     }  
+    .box-box{
+    margin: 0 auto;
+        width: 200px;
+    height: 110px;
+    }
+    .second-box-parent{
+        width: 750px;
+    }
+    .img-box-t-sec{
+        font-size: 27px;
+        position: relative;
+        left: -50px;
+        top: 30px;
+    }
+    .pet-img-sec{
+      position: relative;
+      left: 240px;
+      top: -180px;
+     
+    }
+
+    
+}
+@media screen and (min-width: 651px) and (max-width:1025px) {
+.browse-by-cata{
+position: relative;
+top: -70px;
+}
+.second-box-parent{
+    width: 750px;
+}
 }
