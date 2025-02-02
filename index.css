@@ -41,6 +41,36 @@
     grid-template-columns: repeat(3,2fr);
     width: 700px;
 }
+/* teo box img and text part */
+
+/* 1st box styles */
+.first-box-parent {
+    margin-top: 20px;
+    width: 750px;
+    height: 470px;
+    flex: 1;
+}
+
+/* 2nd box styles */
+.second-box-parent{
+width: 530px;
+height: 450px;
+/* flex: 1; */
+}
+.sec-box-img{
+width: 300px;
+height: 320px;
+}
+/* input and text and image footer upper part */
+.input-and-text-upper-parent{
+ 
+   margin: 0 auto;
+   border-radius: 16px;
+   padding-top: 20px;
+   padding-bottom: 15px;
+   margin-bottom: 200px;
+}
+
 @media  screen and (max-width: 650px) {
     .big-box-parent{
         margin: 20px auto;
